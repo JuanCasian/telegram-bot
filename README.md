@@ -1,2 +1,2 @@
 # Whatsapp Bot
-Simple api based bot to control whats app
+Simple API based bot to control whats app
