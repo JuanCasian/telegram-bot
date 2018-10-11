@@ -4,4 +4,4 @@ Documents which have usefull resources and information about the project
 
 #### Content
 
-- Getting on board resources "./Getting-on-board"
+- Getting on board project resources "./Getting-on-board"
