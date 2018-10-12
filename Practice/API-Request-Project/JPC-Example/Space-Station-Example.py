@@ -13,7 +13,7 @@ def main():
     if (response.status_code == 200):
         data = response.json()
         print("Number of people in space: " + str(data["number"]))
-        print("Their names are:")
+        print("Names:")
         for person in data["people"]:
             print(person["name"])
     else:
