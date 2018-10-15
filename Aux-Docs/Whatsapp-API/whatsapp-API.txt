@@ -1,0 +1,10 @@
+			*Information about the api to make robot*
+
+Link to whatsapp api for business:
+	https://www.whatsapp.com/business/api
+
+Link to documentation about api:
+	https://developers.facebook.com/docs/whatsapp
+
+Link to FAQ about API:
+	https://developers.facebook.com/docs/whatsapp/faq
