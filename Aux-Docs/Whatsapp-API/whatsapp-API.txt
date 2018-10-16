@@ -1,4 +1,4 @@
-			*Information about the api to make robot*
+			*Information about the api to make bot*
 
 Link to whatsapp api for business:
 	https://www.whatsapp.com/business/api
@@ -8,3 +8,7 @@ Link to documentation about api:
 
 Link to FAQ about API:
 	https://developers.facebook.com/docs/whatsapp/faq
+
+** I have tried to create a business account to run whatsapp API but
+	first it needs to be a verified account
+
