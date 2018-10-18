@@ -8,7 +8,7 @@ def main():
     if (response.status_code == 200):
         data = response.json()
         print("Chuck Norris random fact #" + str(random.randint(1, 999)) + ": ")
-        print(data["value"] + '\n')
+        print(data["value"])
     else:
         print("Unable to retrieve information")
 
