@@ -22,7 +22,7 @@ def get_chat_id():
 CHAT_ID = get_chat_id()
 
 def main():
-    if (CHAT_ID != "Unable to retrieve information")
+    if (CHAT_ID != "Unable to retrieve information"):
         response = requests.get("{}sendMessage?chat_id={}&text={}".format(URL, CHAT_ID, MESSAGE))
         if (response.status_code == 200):
             print("Message sent")
