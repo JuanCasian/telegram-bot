@@ -4,7 +4,7 @@ import random
 import sys
 
 '''
-Script usage: python3 [Script_Name]
+Script usage on terminal: python3 [Script_Name] [Telegram Token] [Message] 
 '''
 
 TOKEN = sys.argv[1]
@@ -23,7 +23,7 @@ CHAT_ID = get_chat_id()
 
 def main():
     if (CHAT_ID != "Unable to retrieve information")
-        response = requests.get("{}sendMessage?chat_id={}&text={}".format(URL, CHAT_ID, sys.argv[2]))
+        response = requests.get("{}sendMessage?chat_id={}&text={}".format(URL, CHAT_ID, MESSAGE))
         if (response.status_code == 200):
             print("Message sent")
     else:
