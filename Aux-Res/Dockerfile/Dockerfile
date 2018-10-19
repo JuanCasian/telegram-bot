@@ -20,4 +20,4 @@ RUN apt-get update && apt-get upgrade -y && \
 		mkdir ~/Documents && \
 		echo "\033[0;32mALL READY"
 
-CMD cd ~/ && zsh
+CMD cd ~/ && zsh && echo "Welcome"
