@@ -7,7 +7,7 @@
 [sudo] npm install -g gh
 ```
 
-- Enter and edit the script "issues" list (make sure to leave a {} at the beginning of each issue"
+- Enter and edit the script "issues" list (make sure to leave a "{}" at the beginning of each issue)"
 
 - Run the command using: 
 ```
