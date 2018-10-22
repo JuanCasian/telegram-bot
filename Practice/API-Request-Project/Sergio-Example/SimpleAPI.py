@@ -1,9 +1,27 @@
+#Sergio Garcia 
+#October 21, 2018
+#API request to http://numbersapi.com/random/year?json
+
 import requests
-import json
+import json 
+import random
 
 def main():
-    response = requests.get("http://api.open-notify.org/iss-now.json")
-    print(response.status_code)
+    type = ["trivia", "year", "date", "math"]
+    randomtype = type[(random.randint(0,3))]
+    randomnumber =str(random.randint(1,9999))
+    
+ #Random numbers and random types for the API
 
-if __name__== "__main__":
+    response = requests.get("http://numbersapi.com/"+ randomnumber + "/" + randomtype + "?json")
+    if (response.status_code == 200):
+        data = response.json ()
+        print("Information of API Request")
+        print("Number: "+str(data["number"]))
+        print("Type: " +str(data["type"]))
+        print("Text: "+str(data["text"]))
+    else:
+        print("Error")
+      
+if __name__ == "__main__":
     main()
