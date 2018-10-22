@@ -2,6 +2,9 @@ This is a link to an explanation on how to do a simple api request and how does
 	this work:
 		https://www.dataquest.io/blog/python-api-tutorial/
 
+This is a link to some fun APIs to choose from to make your first API request:
+		https://medium.com/@vicbergquist/18-fun-apis-for-your-next-project-8008841c7be9
+
 ** An error in which I run to when doing this tutorial is that I was
 	importing the library with '''pip install requests''' but that
 	only imports it for python 2, if you get:
