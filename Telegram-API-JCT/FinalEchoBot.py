@@ -2,12 +2,13 @@ import json
 import requests
 import time
 import urllib
+import ReadingMessage
+
+TOKEN = str(ReadingMessage.getToken())
+URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 #By adding urllib we can encode and use problematic characters such as '+' '&' and even emojis
 
-
-TOKEN = "683099339:AAEdyhnM8t1QQFqcoZyPSINBr3_wFRQ1al4"
-URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
 def get_url(url):

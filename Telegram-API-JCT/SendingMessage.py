@@ -1,9 +1,9 @@
 import json 
 import requests
+import ReadingMessage
 
-TOKEN = "683099339:AAEdyhnM8t1QQFqcoZyPSINBr3_wFRQ1al4"
+TOKEN =str(ReadingMessage.getToken())
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
-
 
 def get_url(url):
     response = requests.get(url)

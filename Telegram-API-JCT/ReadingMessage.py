@@ -2,7 +2,13 @@ import json
 import requests
 import time
 
-TOKEN = "683099339:AAEdyhnM8t1QQFqcoZyPSINBr3_wFRQ1al4"
+
+# getToken() will be used in all documents to ask for the bot's token instead of including it directly in code
+def getToken():                              
+    userinput=input("Enter Bot Token: ")     
+    return userinput                             
+                                             
+TOKEN =str(getToken())
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
