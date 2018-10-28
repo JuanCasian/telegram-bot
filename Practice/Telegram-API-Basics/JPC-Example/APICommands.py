@@ -31,11 +31,10 @@ def get_token():
 def print_updates(token):
     info = make_get_request(token, BOT_UPDATES)
     for updates in info:
-        print (updates["update_id"])
+        print (updates)
 
 def main():
     token = get_token()
-    print_bot_info(token)
     print_updates(token)
 
 if __name__ == "__main__":
