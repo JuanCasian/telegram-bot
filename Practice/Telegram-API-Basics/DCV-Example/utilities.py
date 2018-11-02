@@ -1,0 +1,31 @@
+import requests
+import urllib
+import json
+import sys
+
+TOKEN = input("Insert token: ")
+URL = "https://api.telegram.org/bot{}/".format(TOKEN)
+
+def get_updates(offset=None):
+    url = URL + "getUpdates?timeout=20";
+    if (offset):
+        url += "?offset={}".format(offset)
+    response = requests.get(url)
+    if (response.status_code == 200):
+        data = response.json()
+        return (data)
+    else:
+        print("Invalid token or unable to retrieve information")
+        (sys.exit(0))
+
+def get_last_update_id(updates):
+    return (int(updates["result"][-1]["update_id"]))
+
+def get_last_chat_id_and_text(updates):
+    text = updates["result"][-1]["message"]["text"]
+    chat_id = updates["result"][-1]["message"]["chat"]["id"]
+    return (text, chat_id)
+
+def send_message(text, chat_id):
+    text = urllib.parse.quote_plus(text)
+    requests.get(URL + "sendMessage?text={}&chat_id={}".format(text, chat_id))

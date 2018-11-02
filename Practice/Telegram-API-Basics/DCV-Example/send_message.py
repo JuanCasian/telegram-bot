@@ -2,14 +2,15 @@ import requests
 import json
 import random
 import sys
+from utilities import *
 
 '''
 Script usage on terminal: python3 [Script_Name] [Telegram Token] [Message] 
 '''
 
-TOKEN = sys.argv[1]
-MESSAGE = sys.argv[2]
-URL = "https://api.telegram.org/bot{}/".format(TOKEN)
+TOK = sys.argv[1] if len(sys.argv) == 3 else TOKEN
+MESSAGE = sys.argv[2]  if len(sys.argv) == 3 else input("Input message: ")
+URL = "https://api.telegram.org/bot{}/".format(TOK)
 
 def get_chat_id():
     response = requests.get("{}getupdates".format(URL))

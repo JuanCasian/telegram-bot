@@ -1,12 +1,10 @@
 import requests
 import json
 import random
+from utilities import *
 
 def main():
-
-    #response = requests.get("https://api.telegram.org/bot717762374:AAGsntUP75OQV07HlToboFTZSaNef4M4i58/getme")
-    #Api to retrieve your bot's information
-    response = requests.get("https://api.telegram.org/bot717762374:AAGsntUP75OQV07HlToboFTZSaNef4M4i58/getupdates")
+    response = requests.get("https://api.telegram.org/bot{}/getupdates".format(TOKEN))
     #API to retrieve received messages
     if (response.status_code == 200):
         data = response.json()
