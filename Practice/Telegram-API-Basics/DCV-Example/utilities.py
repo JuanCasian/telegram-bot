@@ -7,7 +7,7 @@ TOKEN = input("Insert token: ")
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 def get_updates(offset=None):
-    url = URL + "getUpdates?timeout=20";
+    url = URL + "getUpdates?timeout=100";
     if (offset):
         url += "?offset={}".format(offset)
     response = requests.get(url)
@@ -26,6 +26,9 @@ def get_last_chat_id_and_text(updates):
     chat_id = updates["result"][-1]["message"]["chat"]["id"]
     return (text, chat_id)
 
-def send_message(text, chat_id):
+def send_message(text, chat_id, reply_markup=None):
     text = urllib.parse.quote_plus(text)
-    requests.get(URL + "sendMessage?text={}&chat_id={}".format(text, chat_id))
+    url = URL + "sendMessage?text={}&chat_id={}".format(text, chat_id)
+    if reply_markup:
+        url += "&reply_markup={}".format(reply_markup)
+    requests.get(url)
