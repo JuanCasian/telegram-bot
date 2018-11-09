@@ -5,9 +5,9 @@ import os
 import sys
 
 KEY = "{}&key=" + os.environ["GKEY"]
-DIRECTION = "https://maps.googleapis.com/maps/api/directions/json?{}".format(KEY)
+DIRECTION = "https://www.google.com/maps/dir/?api=1&origin={}&destination={}&destination_place_id={}&travelmode={}"
 PLACE = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?{}".format(KEY)
-
+MAP = "https://www.google.com/maps/search/?api=1&query={},{}&query_place_id={}"
 class routes:
 
     def __init__(self, start_id, start, end):
@@ -29,12 +29,19 @@ def search_place(text, lat, lon):
         print("Invalid token or unable to retrieve information")
         (sys.exit(0))
 
-def clean_search(text, data):
-    places = [[]]
+def clean_search(data):
+    places = []
     i = 0
-    
-    while i < 5:
-        places[i].append(data[i]["id"])
+    while i < 3:
+        places.append([])
+        places[i].append(data[i]["place_id"])
         places[i].append(data[i]["name"])
-        places[i].append(data[i]["vicinity"])
+        places[i].append((data[i]["vicinity"])
+        places[i].append(data[i]["geometry"]["location"]["lat"])
+        places[i].append(data[i]["geometry"]["location"]["lng"])
+        places[i].append(MAP.format(places[i][3], places[i][4], places[i][0]))
         i += 1
+    return (places)
+
+def  get_route(start, end, method):
+    url = DIRECTIONS.format
