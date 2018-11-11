@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lively-paratext-221815",
+  "private_key_id": "aa9b46e300d4bff68b0eab8a36bcf7d3122ea85e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrvH/UeTo2+aXg\ndhQDPCE0N81tSl0mGn1424zyPuEOQXHfi+N1I3HvyPQI3VM7xyBGTXw5Osf4JesK\nWCp0ZHLMX+EWE6zchUmDQgtnojPAR393xIhyZ5Oyx8/J80AfE63z5B0cf/SwPW0D\n2m27tRjANRv1/DRD2aND59fkdcZ/fYAkItvMWUmM2lktDpJ3KhvyFVBYG/hyiqpZ\n6URkI3STkuTApuvCirnCcUijvFgnmZCOn3ax3FEfJZJdSQ9Sfio0iLJSAuEinqve\nrjmkW8CP2PuAWjtqz/fgKZazbMglOx0WmCX5+gKTbBxa/pZTb4cXYG/hQaPINW7h\nrCIV/7d3AgMBAAECggEADscsOtTpuQRXjU6r3zFj7BHnOAHfrSE3bdh6svfNNwRT\nr7hibNiNe+RPd5nQCUNT2CjfyS7xOT3OEXhPwu9H36VagaNUyy8fCc/7mkHfcSrV\n4bEESs/16jr+evLXMDVp0SRuit7J6AaJJH091xq41AVd8BdxSetm/LdtIQgvehXn\nA1zjkI2OcsM1Gj0sHs6RtRjusdYYRYSw2QYwUJYoP9G3U8ad0BxhS/UO2BGOp9R3\nUFk6DA/en0NXmkpIjwWGZrSqaDqved3HzzmJIjuTAPSMgHxY1EddVEw8c5EkaXlb\n2XT4sLJTHJ1BttCx7kx0Pm/Ii2qiFBncVCxuC6L+wQKBgQDUzuKJr2yAF70PC7Rb\nVDUtzgv67KTtbtDW+DunXm9VD65wYRxhrLGxKSRMgQvdVZBoKQ0MHMakrcXAjCMx\nrQNgO8xvB/ruwoJiSt1/WW+lvqRcT8zvBpUsWrsGhDzJ8Umun2IemvLWQPG0cy0u\nPNKdsk7XjYKtyhqk6iHL1fLZNwKBgQDOl5ljI276Jp72xDbE25yAe9hRRtdut7FG\nZoLQZVmo/gbbTf+4YIMm88FLKS9qB54z6Z8b1UxjSMVZfnHuM48ydVbTGjoTQtek\nwE7/cDoO8gAaUc9a70NS/hYfzCfvvVa2t/8eMmHbRhdujXFF/2YqG+o3bKLz9kEV\nAHilXnwzwQKBgFELpWzoWTsDT2Yuf/aUQFh8c0WR4FHodTKZgSaBqYbMnROBeGye\nd2HQGFnmf51Am+l/UM+/GcvXvktRU4n0qSd6PqY+dMt/WmaSun5okkOeMjxRy+tw\nJ1moCDg4HmqOMRCG9LhRLJB6VVLy1k8YrOGP6cTfyNfk83bBEDPv/DfLAoGASMbw\n+xKtcqQOVeHzZU/0BvMZ1i/9jnxZj/Jm3OEHP9gVNEZ68knVifBOxJqCoHiEi8ce\nDOEMIuGs3AUGP6KcLGtXpdBUaxqd+uTgL24qlb88uAjf4intbpwh0RvLadIqbP3O\neqXHAUbk1EYxhDYfmG/zB4lWsliqvqpG1gK+AEECgYEAxLWdlX37h69Rj6nuTSse\nK90A3Bu9kgA0Jd70MqjUntIQv0m49mLQr0g6AJEhJzCG7ZqPwdmg5TxSvnv3jo2d\n5FbWqrKRlP9xuN23E9dyajgVUG/uWoxmUwGSK/WLz7gfXPkpLvhzVNzxQewryefC\nsMfNS6RFbYChrMsk8U+Nru8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "jose-toscano@lively-paratext-221815.iam.gserviceaccount.com",
+  "client_id": "114479936598278156498",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jose-toscano%40lively-paratext-221815.iam.gserviceaccount.com"
+}
