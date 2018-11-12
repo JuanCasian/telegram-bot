@@ -36,7 +36,7 @@ def clean_search(data):
         places.append([])
         places[i].append(data[i]["place_id"])
         places[i].append(data[i]["name"])
-        places[i].append((data[i]["vicinity"])
+        places[i].append(data[i]["vicinity"])
         places[i].append(data[i]["geometry"]["location"]["lat"])
         places[i].append(data[i]["geometry"]["location"]["lng"])
         places[i].append(MAP.format(places[i][3], places[i][4], places[i][0]))
@@ -44,4 +44,4 @@ def clean_search(data):
     return (places)
 
 def  get_route(start, end, method):
-    url = DIRECTIONS.format
+    url = DIRECTIONS.format(str(start[0]) + "0," + str(start[0]) + "0", str(end[3]) + "0," + str(end[4]) + "0", end[0], method)
